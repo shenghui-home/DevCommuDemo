@@ -1,0 +1,367 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bgimage"
+    android:scrollbars="none"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="8px"
+        android:paddingLeft="8px"
+        android:paddingRight="8px"
+        android:paddingTop="8px"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/LinearLayout01"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:paddingTop="10px"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/serialBaudText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:layout_weight="1.0"
+                android:text="Serial baudrate : "
+                android:textColor="#ffffff"
+                android:background="@android:color/transparent" />
+
+            <EditText
+                android:id="@+id/serialBaudEdit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:background="#ffffff"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/serialBaudBtn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:text="Serial Baud Setting" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout02"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:paddingTop="10px"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/serialSendText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:layout_weight="1.0"
+                android:text="Send data : "
+                android:textColor="#ffffff"
+                android:background="@android:color/transparent" />
+
+            <EditText
+                android:id="@+id/serialSendEdit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:background="#ffffff"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/serialReadBtn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:text="Serial Data Reading..." />
+
+            <Button
+                android:id="@+id/serialSendBtn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Serial Data Sending..."
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout03"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:paddingTop="10px"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/i2cSendText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:layout_weight="1.0"
+                android:text="Send data : "
+                android:textColor="#ffffff"
+                android:background="@android:color/transparent" />
+
+            <EditText
+                android:id="@+id/i2cSendEdit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:background="#ffffff"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/i2cSendBtn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:text="I2c Data Sending..." />
+
+            <Button
+                android:id="@+id/i2cReadBtn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:text="I2c Data Reading..." />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout04"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:paddingTop="10px"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/spiModeText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:layout_weight="1.0"
+                android:text="SPI Mode : "
+                android:textColor="#ffffff"
+                android:background="@android:color/transparent" />
+
+            <EditText
+                android:id="@+id/spiModeEdit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:background="#ffffff"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/spiModeSetBtn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:text="SPI Mode Setting" />
+
+            <Button
+                android:id="@+id/spiModeGetBtn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:text="SPI Mode Getting" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout05"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:paddingTop="10px"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/spiSpeedText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:layout_weight="1.0"
+                android:text="SPI Speed : "
+                android:textColor="#ffffff"
+                android:background="@android:color/transparent" />
+
+            <EditText
+                android:id="@+id/spiSpeedEdit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:background="#ffffff"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/spiSpeedSetBtn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:text="SPI Speed Setting" />
+
+            <Button
+                android:id="@+id/spiSpeedGetBtn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:text="SPI Speed Getting" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout06"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:paddingTop="10px"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/spiBitsText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:layout_weight="1.0"
+                android:text="SPI Bits : "
+                android:textColor="#ffffff"
+                android:background="@android:color/transparent" />
+
+            <EditText
+                android:id="@+id/spiBitsEdit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:background="#ffffff"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/spiBitsSetBtn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:text="SPI Bits Setting" />
+
+            <Button
+                android:id="@+id/spiBitsGetBtn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:text="SPI Bits Getting" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout07"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:paddingTop="10px"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/spiCommuDelayText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:layout_weight="1.0"
+                android:text="SPI Commu Delay(us) : "
+                android:textColor="#ffffff"
+                android:background="@android:color/transparent" />
+
+            <EditText
+                android:id="@+id/spiCommuDelayEdit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:background="#ffffff"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/spiCommuDelayBtn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:text="SPI Commu Delay Setting" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout08"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:paddingTop="10px"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/spiDevNoText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:layout_weight="1.0"
+                android:text="SPI Dev No : "
+                android:textColor="#ffffff"
+                android:background="@android:color/transparent" />
+
+            <EditText
+                android:id="@+id/spiDevNoEdit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:background="#ffffff"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/spiDevNoBtn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:text="SPI Dev No Setting" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout09"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:paddingTop="10px"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/spiSendDataText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:layout_weight="1.0"
+                android:text="SPI Send Data : "
+                android:textColor="#ffffff"
+                android:background="@android:color/transparent" />
+
+            <EditText
+                android:id="@+id/spiSendDataEdit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:background="#ffffff"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/spiSendDataBtn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:text="SPI Data Sending..." />
+
+            <Button
+                android:id="@+id/spiReadDataBtn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:text="SPI Data Reading..." />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
